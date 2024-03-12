@@ -2,6 +2,7 @@ import numpy as np
 
 
 def check_var_int_or_float(var: int | float):
+    """check if the var is a float or int"""
     if (not isinstance(var, (int)) and
             not isinstance(var, float)):
         raise ValueError("is not an int or a float")
@@ -17,6 +18,7 @@ def check_array_int_or_float(arr):
 
 
 def slice_me(family: list, start: int | float, end: int | float) -> list:
+    """slice the list with the given value"""
     try:
         if type(family) is not list:
             raise ValueError("is not a list")
@@ -36,6 +38,7 @@ def slice_me(family: list, start: int | float, end: int | float) -> list:
 
 
 def main():
+    """slice the given given list et print it"""
     family = [[1.80, 78.4],
               [2.15, 102.7],
               [2.10, 98.5],

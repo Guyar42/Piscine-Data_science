@@ -2,6 +2,7 @@ import cv2
 
 
 def ft_load(path: str) -> list:
+    """load an image and show it"""
     try:
         if not path.lower().endswith((".jpeg", ".jpg")):
             raise Exception("Image is not a jpeg or jpg")

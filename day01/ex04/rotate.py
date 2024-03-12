@@ -5,6 +5,7 @@ import numpy
 
 
 def ft_tranpose(img: list) -> list:
+    """ transpose the givent list"""
     print("the shape of image is", img.shape)
     print(img)
     img = [
